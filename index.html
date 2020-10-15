@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="This is a website for ordering pizza">
+		<meta name="keywords" content="html5,mini project">
+		<meta name="author" content="sreelakshmi">
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+		<title>Pizza Hut</title>
+	</head>
+
+	<body>
+		<span class="wlcm">
+			<h1 class="ml5">
+				<span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters letters-left">Welcome</span>
+					<span class="letters ampersand">to</span>
+					<span class="letters letters-right">Pizza Hut</span>
+					<span class="line line2"></span>
+				</span>
+			</h1>
+		</span>
+		<h3 class="best"><i>Best pizza ever!!</i></h3>
+		<img id="image" src="pizza5.PNG" style="width: 50%" />
+		<br />
+
+		<h2 class="a">Pizza makes anything possible...</h2>
+
+		<h1 class="b">We have variety of pizza here</h1>
+
+		<div class="menugif">
+			<div class="menu">
+				<h2>Here is our menu...</h2>
+	
+				<table style="padding: 1%;">
+					<thead class="head">
+						<tr>
+							<th>Type of pizza</th>
+							<th>Rate in $</th>
+						</tr>
+					</thead>
+					<br />
+					<tbody class="data">
+						<tr>
+							<td>Napolitana pizza</td>
+							
+							<td>15.78$</td>
+						</tr>
+						<tr>
+							<td>New York-Style Pizza</td>
+							<td>16.34$</td>
+						</tr>
+						<tr>
+							<td>Chicago Pizza</td>
+							<td>14.65$</td>
+						</tr>
+						<tr>
+							<td>Sicilian Pizza</td>
+							<td>14.34$</td>
+						</tr>
+						<tr>
+							<td>Californian Pizza</td>
+							<td>15.67$</td>
+						</tr>
+						<tr>
+							<td>Detroit Pizza</td>
+							<td>16.89$</td>
+						</tr>
+						<tr>
+							<td>St. Louis Pizza</td>
+							<td>17.89$</td>
+						</tr>
+						<tr>
+							<td>Greek Pizza</td>
+							<td>16.47$</td>
+						</tr>
+						<tr>
+							<td>Breakfast Pizza</td>
+							<td>14.56$</td>
+						</tr>
+						<tr>
+							<td>Bagel Pizza</td>
+							<td>12.98$</td>
+						</tr>
+						<tr>
+							<td>Dessert Pizza</td>
+							<td>15.31$</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	
+			<img src="pizza.gif" class="gif">
+		</div>
+
+
+        <h2>Now select your choice...</h2>
+        <br />
+
+		<form>
+			<input type="checkbox" name="" /> Napolitana pizza<br />
+			<input type="checkbox" name="" /> New York-Style Pizza<br />
+			<input type="checkbox" name="" /> Chicago Pizza<br />
+			<input type="checkbox" name="" /> Sicilian Pizza<br />
+			<input type="checkbox" name="" /> Californian Pizza<br />
+			<input type="checkbox" name="" /> Detroit Pizza<br />
+			<input type="checkbox" name="" /> St. Louis Pizza<br />
+			<input type="checkbox" name="" /> Greek Pizza<br />
+			<input type="checkbox" name="" /> Breakfast Pizza<br />
+			<input type="checkbox" name="" /> Bagel Pizza<br />
+			<input type="checkbox" name="" /> Dessert Pizza<br />
+        </form>
+        <br />
+
+        <select name="pieces">
+            <option value="1">1 piece</option>
+            <option value="2">2 pieces</option>
+            <option value="3">3 pieces</option>
+            <option value="4">4 pieces</option>
+            <option value="5">5 pieces</option>
+            <option value="6">6 pieces</option>
+            <option value="7">7 pieces</option>
+            <option value="8">8 pieces</option>
+            <option value="9">9 pieces</option>
+            <option value="10">10 pieces</option>
+		</select>
+		<form action="">
+			<input type="radio" name="delivery" value="delivery">Deliver<br />
+            <input type="radio" name="delivery" value="pickup">Pick up<br />
+		</form>
+        <br /><br />
+
+        <h2>Enter delivery adress </h2>
+
+		<form action="place-order.php">
+			<input name="address1" placeholder="Adddress line 1" />
+			<input name="address2" placeholder="Address line 2" /><br />
+			<input type="text" name="city" placeholder="City" />
+			<input type="text" name="state" placeholder="State" />
+            <input type="text" name="pincode" placeholder="PIN Code" />
+            <br />
+            <br />
+            <br />
+		</form>
+
+		
+	</body>
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+	anime
+		.timeline({ loop: true })
+		.add({
+			targets: ".ml5 .line",
+			opacity: [0.5, 1],
+			scaleX: [0, 1],
+			easing: "easeInOutExpo",
+			duration: 700,
+		})
+		.add({
+			targets: ".ml5 .line",
+			duration: 600,
+			easing: "easeOutExpo",
+			translateY: (el, i) => -0.625 + 0.625 * 2 * i + "em",
+		})
+		.add({
+			targets: ".ml5 .ampersand",
+			opacity: [0, 1],
+			scaleY: [0.5, 1],
+			easing: "easeOutExpo",
+			duration: 600,
+			offset: "-=600",
+		})
+		.add({
+			targets: ".ml5 .letters-left",
+			opacity: [0, 1],
+			translateX: ["0.5em", 0],
+			easing: "easeOutExpo",
+			duration: 600,
+			offset: "-=300",
+		})
+		.add({
+			targets: ".ml5 .letters-right",
+			opacity: [0, 1],
+			translateX: ["-0.5em", 0],
+			easing: "easeOutExpo",
+			duration: 600,
+			offset: "-=600",
+		})
+		.add({
+			targets: ".ml5",
+			opacity: 0,
+			duration: 1000,
+			easing: "easeOutExpo",
+			delay: 1000,
+		});
+</script>
+<script>
+	var imageSources = [
+		"pizza1.PNG",
+		"pizza2.PNG",
+		"pizza3.PNG",
+		"pizza4.PNG",
+		"pizza.PNG",
+	];
+
+	var index = 0;
+	setInterval(function () {
+		if (index === imageSources.length) {
+			index = 0;
+		}
+		document.getElementById("image").src = imageSources[index];
+		index++;
+	}, 2000);
+</script>
