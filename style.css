@@ -3,86 +3,89 @@
   padding: 0;
 }
 body{
-    background-color: rgb(255, 121, 143);
+  background-image: url("pizza_back.PNG");
+  opacity: initial;
+  background-size: 200%;
+
+}
+.intro{
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background-color: rgba(253, 245, 230, 0.815);
+  page-break-inside: auto;
+}
+.btn{
+  color: green;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 50%;
+}
+.pizza{
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+.heading{
+  padding-top: 1%;
+  padding-left: 11%;
+  border-radius: 5%;
 
 }
 
-.wlcm{
+.contact{
+  padding-top: 3%;
+  padding-left: 14%;
+  font-family: monospace;
+  color: navy;
+
+}
+.fun{
+  text-align: center;
+  padding-left: 20%;
+  padding: 5%;
+  border: 2px  white;
+  border-radius: 1%;
+  box-shadow: 5% #960a0a;
+  transition: width 0.25s, height 0.25s;
+  background-image: url("pizza_1.webp");
+  background-repeat: repeat;
+}
+.about{
+  background-color: rgba(0, 0, 0, 0.856);
+  margin: 8%;
+  padding: 4%;
+  color: rgb(103, 237, 255);
+  text-align: justify;
+  font-size: 120%;
+}
+.working{
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.talk{
+  
+  margin: 8%;
+  padding: 5%;
+  font-size: 130%;
+  color: rgb(255, 92, 168);
+  font-family: cursive;
   align-content: center;
-  margin-left: 45%;
+  align-content: space-between;
+  background-color: rgba(0, 0, 0, 0.856);
 }
-.ml5 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 4.5em;
-    color: #ad2525;
-  }
-  
-  .ml5 .text-wrapper {
-    display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
-    line-height: 1em;
-  }
-  
-  .ml5 .line {
-    margin: auto;
-    height: 3px;
-    width: 100%;
-    background-color: #402d2d;
-    transform-origin: 0.5 0;
-  }
-  
-  .ml5 .ampersand {
-    font-family: Baskerville, serif;
-    font-style: italic;
-    font-weight: 400;
-    width: 1em;
-    margin-right: -0.1em;
-    margin-left: -0.1em;
-  }
-  
-  .ml5 .letters {
-    display: inline-block;
-    opacity: 0;
-  }
-
-  .best{
-    text-align: center;
-    color: purple;
-  }
-
-  .image{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 3%;
-  }
-
-  .a{
-    text-align: center;
-    color: royalblue;
-  }
-  .b{
-    text-align: start;
-    color: navy;
-  }
-
-  .menugif{
-    display: flex;
-  }
-
-  .menu{
-    margin-right: 4%;
-  }
-  .head{
-    color: maroon;
-  }
-  .data{
-    color: midnightblue;
-  }
-  
-
-
-
-
+.end{
+  background-color: rgba(0, 0, 0, 0.87);
+  color: rgb(255, 255, 255);
+  padding-left: 40%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.footer{
+  background-color: rgba(0, 0, 0, 0.87);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 120%;
+}
