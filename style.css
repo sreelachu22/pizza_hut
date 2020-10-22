@@ -53,11 +53,26 @@ body{
   padding-bottom: 0px;
   padding-right: 0px;
 }
-.fun{
+.ml10 {
+  font-size: 150%;
+  font-weight: bold;
   text-align: center;
-  color: rgb(112, 2, 2);
-  align-content: cover;
+  text-decoration: rebeccapurple;
+  position: center;
+  color: rgb(156, 0, 34);
+}
 
+.ml10 .text-wrapper {
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
 }
 #info {
   align-content: center;
@@ -66,9 +81,12 @@ body{
   background-color: rgba(0, 0, 0, 0.856);
   margin: 8%;
   padding: 4%;
-  color: rgb(227, 252, 255);
+  color: rgb(46, 243, 73);
   text-align: justify;
   font-size: 120%;
+}
+.about .h3{
+  color: rgb(34, 201, 34) !important;
 }
 .working{
   display: flex;
@@ -85,11 +103,22 @@ body{
   align-content: flex-start;
   padding: 5%;
   font-size: 130%;
-  color: rgb(255, 92, 168);
+  color: rgb(248, 38, 119);
   font-family: cursive;
 }
-.tlk .h3{
-  border-bottom: solid white 1px;
+.tlk .h3 {
+  color: aqua !important ;
+
+}
+.submit{
+  background-color: rgb(136, 255, 245);
+  border-style: groove;
+  border-width: 3px;
+  border-radius: 20%;
+  border-color: rgb(50, 207, 255);
+  box-shadow: lavender 30%;
+  padding: 1%;
+
 }
 .heading{
   align-content: flex-end;
@@ -100,11 +129,14 @@ body{
 .end{
   background-color: rgba(0, 0, 0, 0.87);
   color: rgb(255, 255, 255);
-  padding-left: 40%;
+  width: 30%;
+  padding-left: 35%;
+  padding-right: 35%;
   padding-top: 4%;
   padding-bottom: 4%;
 }
 .footer{
+  padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.87);
   color: rgb(255, 255, 255);
   text-align: center;

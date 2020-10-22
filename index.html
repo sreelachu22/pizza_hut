@@ -22,20 +22,20 @@
 			</a>
 			<div class="a">
 				<div class="contact">
-					<a id="fb" href="https://www.facebook.com/pizzahutindia/?brand_redir=66093853683" target="_blank">
+					<a id="fb" href="https://www.facebook.com/pizzahutindia/?brand_redir=66093853683">
 						<img src="fb.png" alt="facebook">
 					</a>&nbsp;&nbsp;
 					<a id="map" href="https://www.google.com/maps/place/9%C2%B058'02.6%22N+76%C2%B014'41.2%22E/@9.9674,76.244784,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d9.9674!4d76.244784?hl=en-GB">
-						<img src="location.png" alt="location" target="_blank">
+						<img src="location.png" alt="location">
 					</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a id="twttr" href="https://twitter.com/PizzaHutIN">
-						<img src="twitter.png" alt="twitter" target="_blank">
+						<img src="twitter.png" alt="twitter">
 					</a><br />
 		
-					<a id="insta" href="https://www.instagram.com/pizzahut/?hl=en" target="_blank">
+					<a id="insta" href="https://www.instagram.com/pizzahut/?hl=en">
 						<img src="instagram.png" alt="instagram">
 					</a>&nbsp;&nbsp;
-					<a id="yutbe" href="https://www.youtube.com/user/pizzahut" target="_blank">
+					<a id="yutbe" href="https://www.youtube.com/user/pizzahut">
 						<img src="youtube.png" alt="youtube">
 					</a>
 				</div>
@@ -49,7 +49,14 @@
 		
 
 		<div class="fun">
-			<h1><i>Unbox the fun for everyone</i></h1>
+			<br />
+			<h1 class="ml10">
+				<span class="text-wrapper">
+					<span class="letters">Unbox fun for everyone</span>
+				</span>
+			</h1>
+			  
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 			<img src="pizza_1.webp" alt="gif" width="100%">
 		</div>
 		<div class="about">
@@ -57,24 +64,24 @@
 
 			<p>
 				It was the summer of 1958 when Dan and Frank Carney decided to open a pizzeria.
-				With mouth-watering pizzas prepared by the founders themselves, Pizza Hut soon
-				became the most popular neighbourhood restaurant. From then to over 13,200 restaurants
-				across the world today, we have come a long way.
+				With mouth-watering pizzas prepared by the founders themselves,Pizza Hut soon
+				became the most popular neighbourhood restaurant.From then to over 13,200 restaurants
+				across the world today,we have come a long way.
 			</p>
 			<br />
 			<br />
 			<p>
 				Today, Pizza Hut is about much more than pizzas. From freshly sauteed pastas & delicious
 				appetizers to mocktails, desserts, soups and salads, we have a wide range for you to feast
-				on. All this, combined with the warm, inviting ambience and friendly service, will lead to
+				on.All this, combined with the warm, inviting ambience and friendly service, will lead to
 				endless conversations, laughter and memories that you'll cherish forever. So, let your hair
 				down and feel at ease. Go ahead and enjoy the All New Pizza Hut experience!
-			</p>
+			</p><br /><br />
 
-			<p>
+			<h3>
 				The address of this restaurant is Unit No 1, Survey No 18, Ground Floor, Fort,
 				Ernakulam, Kerala - 682001.
-			</p>
+			</h3>
 			<br /><br /><br />
 			<div class="other">
 				<h3>Other restaurants of PIZZA HUT</h3><br />
@@ -107,13 +114,13 @@
 			<div class="tlk">
 				<h3>Talk to us</h3><br><br>
 				<form action="message">
-					<input type="text" placeholder="Name"><br>
-					<input type="email" placeholder="email"><br>
-					<input type="text" placeholder="Phone Number"><br /><br />
-					<textarea name="message" type="text" placeholder="message" id="msg" cols="30" rows="5"></textarea>
+					<textarea name="name" type="text" placeholder="name" cols="25" rows="2"></textarea><br>
+					<textarea name="email" type="text" placeholder="email" cols="25" rows="2"></textarea><br>
+					<textarea name="phone" type="phone"  placeholder="phone Number" cols="25" rows="2"></textarea><br /><br />
+					<textarea name="message" type="text" placeholder="message" cols="30" rows="5"></textarea>
 					<br>
-					<button type="submit">
-						<a href="mailto: sree2000lachu@gmail.com">submit</a>
+					<button type="submit" class="submit">
+						<a href="mailto: sree2000lachu@gmail.com">SEND</a>
 					</button>
 				</form>
 			</div>
@@ -139,8 +146,25 @@
 			</p><br />
 			&copy;2020 pizza hut India.All rights reserved.License Number: 10017011004220
 		</footer>
-		
 
-		
 	</body>
 </html>
+<script>
+	// Wrap every letter in a span
+	var textWrapper = document.querySelector('.ml10 .letters');
+	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+	anime.timeline({loop: true})
+  	.add({
+    	targets: '.ml10 .letter',
+    	rotateY: [-90, 0],
+    	duration: 1300,
+    	delay: (el, i) => 45 * i
+  	}).add({
+    	targets: '.ml10',
+   		opacity: 0,
+    	duration: 1000,
+    	easing: "easeOutExpo",
+    	delay: 1000
+  	});
+</script>
