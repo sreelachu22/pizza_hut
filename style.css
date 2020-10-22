@@ -3,59 +3,70 @@
   padding: 0;
 }
 body{
-  background-image: url("pizza_back.PNG");
-  opacity: initial;
-  background-size: 200%;
+  background-image: url("background.jpg");
+  margin: 0%;
+  background-position: center;
+  background-size: 130%;
 
 }
+
 .intro{
-  display: flex;
+  display: inline-flexbox;
   position: sticky;
-  top: 0px;
-  background-color: rgba(253, 245, 230, 0.815);
-  page-break-inside: auto;
+  position: cover;
+  top: 0;
+  background-color: rgba(173, 169, 172, 0.815);
 }
 .btn{
   color: green;
-  margin-top: 5%;
-  margin-left: 5%;
-  border-radius: 50%;
+  position: center;
+  align-content: center !important;
+  padding: 0px;
+}
+.a{
+  display: flex;
 }
 .pizza{
-  padding-left: 5%;
-  padding-top: 3%;
+  object-position: center;
+  align-content: center;
+  padding: 3%;
 }
-
-.heading{
-  padding-top: 1%;
-  padding-left: 11%;
-  border-radius: 5%;
-
-}
-
 .contact{
-  padding-top: 3%;
-  padding-left: 14%;
-  font-family: monospace;
-  color: navy;
+  top: 0;
+  align-content: flex-end;
+  padding: 2%;
 
+}
+.contact .fb{
+  padding-left: 0px;
+  padding-top: 0px;
+}
+.contact .map{
+  padding-right: 0px;
+  padding-top: 0px;
+}
+.contact .insta{
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.contact .yutbe{
+  padding-bottom: 0px;
+  padding-right: 0px;
 }
 .fun{
   text-align: center;
-  padding-left: 20%;
-  padding: 5%;
-  border: 2px  white;
-  border-radius: 1%;
-  box-shadow: 5% #960a0a;
-  transition: width 0.25s, height 0.25s;
-  background-image: url("pizza_1.webp");
-  background-repeat: repeat;
+  color: rgb(112, 2, 2);
+  align-content: cover;
+
+}
+#info {
+  align-content: center;
 }
 .about{
   background-color: rgba(0, 0, 0, 0.856);
   margin: 8%;
   padding: 4%;
-  color: rgb(103, 237, 255);
+  color: rgb(227, 252, 255);
   text-align: justify;
   font-size: 120%;
 }
@@ -64,17 +75,27 @@ body{
   justify-content: space-between;
   padding: 2%;
 }
-
 .talk{
-  
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.856);
   margin: 8%;
+  align-content: space-between;
+}
+.tlk{
+  align-content: flex-start;
   padding: 5%;
   font-size: 130%;
   color: rgb(255, 92, 168);
   font-family: cursive;
-  align-content: center;
-  align-content: space-between;
-  background-color: rgba(0, 0, 0, 0.856);
+}
+.tlk .h3{
+  border-bottom: solid white 1px;
+}
+.heading{
+  align-content: flex-end;
+  padding-top: 1%;
+  border-radius: 5%;
+
 }
 .end{
   background-color: rgba(0, 0, 0, 0.87);
@@ -87,5 +108,5 @@ body{
   background-color: rgba(0, 0, 0, 0.87);
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 120%;
+  font-size: 90%;
 }

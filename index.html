@@ -20,36 +20,37 @@
 					</button>
 				</div>
 			</a>
-			<div class="pizza">
-				<img src="title.PNG" alt="pizza hut">
-				<h2>Best pizza ever!!</h2><br />
-				<h3 id="call">CALL:18002022022</h3>
-			</div>
-			<div class="heading">
-				<img id="image" src="pizza5.PNG" >
-			</div>
-			<div class="contact">
-				<h3> Follow us</h3>
-				<a href="https://www.facebook.com/pizzahutindia/?brand_redir=66093853683" target="_blank">
-					<img src="fb.png" alt="facebook">
-				</a>
-				<a href="https://www.youtube.com/user/pizzahut" target="_blank">
-					<img src="youtube.png" alt="youtube">
-				</a>
-				<a href="https://www.instagram.com/pizzahut/?hl=en" target="_blank">
-					<img src="instagram.png" alt="instagram">
-				</a>
-				<a href="https://www.google.com/maps/place/9%C2%B058'02.6%22N+76%C2%B014'41.2%22E/@9.9674,76.244784,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d9.9674!4d76.244784?hl=en-GB">
-					<img src="location.png" alt="location" target="_blank">
-				</a>
-				<a href="https://twitter.com/PizzaHutIN">
-					<img src="twitter.png" alt="twitter" target="_blank">
-				</a>
+			<div class="a">
+				<div class="contact">
+					<a id="fb" href="https://www.facebook.com/pizzahutindia/?brand_redir=66093853683" target="_blank">
+						<img src="fb.png" alt="facebook">
+					</a>&nbsp;&nbsp;
+					<a id="map" href="https://www.google.com/maps/place/9%C2%B058'02.6%22N+76%C2%B014'41.2%22E/@9.9674,76.244784,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d9.9674!4d76.244784?hl=en-GB">
+						<img src="location.png" alt="location" target="_blank">
+					</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a id="twttr" href="https://twitter.com/PizzaHutIN">
+						<img src="twitter.png" alt="twitter" target="_blank">
+					</a><br />
+		
+					<a id="insta" href="https://www.instagram.com/pizzahut/?hl=en" target="_blank">
+						<img src="instagram.png" alt="instagram">
+					</a>&nbsp;&nbsp;
+					<a id="yutbe" href="https://www.youtube.com/user/pizzahut" target="_blank">
+						<img src="youtube.png" alt="youtube">
+					</a>
+				</div>
+				<div class="pizza">
+					<img src="title.PNG" alt="pizza hut">
+					<h2>Best pizza ever!!</h2><br />
+					<h3 id="call">CALL:18002022022</h3>
+				</div>
 			</div>
 		</div>
+		
 
 		<div class="fun">
-			<img src="info_pizza.PNG" alt="pizza hut">
+			<h1><i>Unbox the fun for everyone</i></h1>
+			<img src="pizza_1.webp" alt="gif" width="100%">
 		</div>
 		<div class="about">
 			<h2>About Us</h2><br /><br />
@@ -85,34 +86,7 @@
 			<br /><br />
 			<h3>Working time</h3>
 			<div class="working">
-				<div class="time">
-					<h5>Sunday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
-				<div class="time">
-					<h5>Monday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
-				<div class="time">
-					<h5>Tuesday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
-				<div class="time">
-					<h5>Wednesday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
-				<div class="time">
-					<h5>Thursday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
-				<div class="time">
-					<h5>Friday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
-				<div class="time">
-					<h5>Saturday</h5>
-					<p>11 AM to 10 PM</p>
-				</div>
+				<p><i>Everyday 11 AM to 10 PM</i></p>
 			</div><br /><br />
 			<div class="Categories">
 				<h3>Categories</h3><br />
@@ -130,16 +104,19 @@
 		</div>
 
 		<div class="talk">
-			<h3>Talk to us</h3><br><br>
-			<form action="message">
-			    <input type="text" placeholder="Name">
-				<input type="email" placeholder="email"><br /><br />
-				<input type="text" placeholder="Phone Number">
-				<input type="text" placeholder="Message" aria-expanded="true">
-				<button type="submit">
-					<a href="mailto: sree2000lachu@gmail.com">submit</a>
-				</button>
-			</form>
+			<div class="tlk">
+				<h3>Talk to us</h3><br><br>
+				<form action="message">
+					<input type="text" placeholder="Name"><br>
+					<input type="email" placeholder="email"><br>
+					<input type="text" placeholder="Phone Number"><br /><br />
+					<textarea name="message" type="text" placeholder="message" id="msg" cols="30" rows="5"></textarea>
+					<br>
+					<button type="submit">
+						<a href="mailto: sree2000lachu@gmail.com">submit</a>
+					</button>
+				</form>
+			</div>
 
 		</div>
 
@@ -167,17 +144,3 @@
 		
 	</body>
 </html>
-
-
-<script>
-	var imageSources = ["pizza.PNG", "pizza1.PNG", "pizza2.PNG", "pizza3.PNG", "pizza4.PNG"]
-	var index = 0;
-	setInterval (function(){
-	  	if (index === imageSources.length) {
-    	index = 0;
-  	}
-  		document.getElementById("image").src = imageSources[index];
-  		index++;
-	} , 2000);
-
-</script>
